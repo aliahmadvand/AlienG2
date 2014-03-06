@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<alieng>
+	<blast>
+		<blastparam>-p blastp -e 1e-5 -b 1000 -m 7</blastparam>
+		<blastoutput>blastOutput.xml</blastoutput>
+	</blast>
+	<parsing>
+		<Evaluemax>1e-5</Evaluemax>
+		<coverage>0.01</coverage>
+		<scoremin>50</scoremin>
+		<numberOfTables>1</numberOfTables>
+		<exclusion>Fungi;contaminant;other sequences;crystal structure;Ternary Complex;|pdb|;artificial sequences;synthetic construct;viruses;plasmids;environmental samples;uncultured</exclusion>
+		<table1>
+			<!--  comment :D -->
+			<group1>Bacteria 'OR' Archaea 'OR'  Alveolata 'OR' Cryptophyta 'OR' Euglenida 'OR' Haptophyceae 'OR' Rhizaria 'OR' stramenopiles 'OR' Viridiplantae 'OR' Glaucocystophyceae 'OR' Rhodophyta 'OR' virues</group1>
+			<group2>*</group2>
+			<AIEvalue>0</AIEvalue>
+			<ratioscore>0.9</ratioscore>
+		</table1>	
+	</parsing>
+</alieng>
